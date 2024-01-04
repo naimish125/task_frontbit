@@ -45,9 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               child: InkWell(
                                 onTap: () {
-                                  Get.toNamed("/detail",
-                                      arguments:
-                                          homeController.dataList[index]);
+                                  Get.toNamed("/detail", arguments: index);
                                 },
                                 child: Image.network(
                                     "${homeController.dataList[index].image}",
